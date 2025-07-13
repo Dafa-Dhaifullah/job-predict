@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #0c0c0c;
+    color: #00ff41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+}
+
+.terminal {
+    border: 2px solid #00ff41;
+    border-radius: 8px;
+    background-color: rgba(0, 20, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.terminal-header {
+    background-color: #333;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid #00ff41;
+}
+
+.buttons { display: flex; }
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.title {
+    color: #eee;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.terminal-body {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.terminal-body p {
+    margin: 0 0 1em 0;
+    line-height: 1.5;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 8px;
+}
+
+#name-input {
+    background: none;
+    border: none;
+    color: #00ff41;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+}
+
+#predict-btn {
+    background-color: #00ff41;
+    color: #0c0c0c;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#predict-btn:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+#result {
+    margin-top: 20px;
+    border: 1px dashed #00ff41;
+    padding: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden { display: none; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

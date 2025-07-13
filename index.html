@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Pekerjaan Masa Depan</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="buttons">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="title">FutureJobPredictor.exe</div>
+            </div>
+            <div class="terminal-body">
+                <p>> Masukkan nama Anda untuk memulai prediksi...</p>
+                <div class="input-line">
+                    <span class="prompt">C:\></span>
+                    <input type="text" id="name-input" placeholder="Ketik nama di sini..." autofocus>
+                </div>
+                <button id="predict-btn">Mulai Prediksi</button>
+                <div id="result" class="hidden">
+                    <p id="result-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
